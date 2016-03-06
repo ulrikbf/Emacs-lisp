@@ -9,7 +9,6 @@
 (defun hx/new-post ()
   (interactive)
   (let* ((name (read-string "Filename: "))
-         (title (read-string "Title: " ))
          (tags (read-string "Tags: " ))
          (template (hx/template name tags)))
     (if (file-exists-p (concat "C:/Users/ulrik/hexo/blog/source/_posts/" name ".org"))
